@@ -1,0 +1,9 @@
+# 核心依赖
+# langchain-openai 提供了 ChatOpenAI 调用客户端（兼容 OpenAI 协议，可换豆包/DeepSeek 等）
+langchain-openai>=0.1.0
+
+# LangChain 框架（实际只用到 langchain-openai 与 langchain-core，此处按需保留）
+langchain>=0.2.0
+
+# Streamlit 网页界面（app.py 使用）
+streamlit>=1.36.0
