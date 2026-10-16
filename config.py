@@ -16,7 +16,8 @@ import os
 # 你的 API Key：
 #   - 优先从环境变量 OPENAI_API_KEY 读取；
 #   - 若环境变量不存在，则使用下方默认占位符（请改成你的真实 Key）。
-API_KEY = os.environ.get("OPENAI_API_KEY", "sk-85aabbb6c2f1491ea2ad306623b3aeba")
+import streamlit as st
+API_KEY = st.secrets["DEEPSEEK_API_KEY"]
 
 # 接口地址（OpenAI 官方）：
 #   - 替换为豆包/火山方舟：  "https://ark.cn-beijing.volces.com/api/v3"
